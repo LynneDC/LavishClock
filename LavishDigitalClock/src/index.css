@@ -1,0 +1,61 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  align-items: center;
+  background-image: url(assets/backGround.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center; 
+
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.clock-contatiner{
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  padding: 10px 0;
+
+}
+.clock{
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 3px 3px hsl(0, 0%, 0);
+
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #dbb740;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
